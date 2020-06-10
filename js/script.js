@@ -18,5 +18,40 @@ $(document).ready(
         $(this).children('.dropdown').addClass('hidden');
       }
     )
+    // Frecce vicino alla lingua
+    // All'entrata del mouse
+    $('.language').mouseenter(
+      function(){
+        var arrowUp = $(this).children('.arrow_up');
+        var arrowDown = $(this).children('.arrow_down');
+
+        arrowDown.removeClass('active').addClass('hidden');
+        arrowUp.removeClass('hidden').addClass('active');
+
+
+      }
+    )
+
+    // All'uscita del mouse
+    $('.language').mouseleave(
+      function(){
+        var arrowUp = $(this).children('.arrow_up');
+        var arrowDown = $(this).children('.arrow_down');
+
+        arrowDown.removeClass('hidden').addClass('active');
+        arrowUp.removeClass('active').addClass('hidden');
+
+
+      }
+    )
+
+    //
+    // $('.language').mouseleave(
+    //   function(){
+    //     $(this).children('.arrow_down').removeClass('hidden');
+    //     $(this).children('.arrow_down').addClass('active');
+    //
+    //   }
+    // )
   }
 )
