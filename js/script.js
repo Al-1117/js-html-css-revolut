@@ -1,0 +1,14 @@
+$(document).ready(
+  function(){
+    $('.with_dropdown').mouseenter(
+      function(){
+        $(this).children('.dropdown').removeClass('hidden');
+      }
+    )
+    $('.with_dropdown').mouseleave(
+      function(){
+        $(this).children('.dropdown').addClass('hidden');
+      }
+    )
+  }
+)

@@ -31,7 +31,7 @@ a{
   height: 100px;
 }
 
-.menu ul{
+.menu .list{
   display: flex;
   line-height: 100px;
   text-align: center;
@@ -73,8 +73,8 @@ a{
 }
 
 /* Dropdown */
-.dropdowm{
-  display: flex;
+.dropdown{
+  /* display: flex; */
   flex-direction: column;
   flex-wrap: nowrap;
   width: 200px;
@@ -84,8 +84,17 @@ a{
 
 }
 
-.dropdowm li{
+.dropdown li{
   padding: 5px;
-  width: 100%;
+  flex-basis: 100%;
   line-height: initial;
+}
+
+
+.active{
+  display: flex;
+}
+
+.hidden{
+  display: none;
 }
