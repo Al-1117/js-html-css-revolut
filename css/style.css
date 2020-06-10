@@ -1,0 +1,91 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* STILI GENERALI */
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #a0a6ad;
+}
+/* MENU  GENERALE*/
+
+.menu_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu{
+  height: 100px;
+}
+
+.menu ul{
+  display: flex;
+  line-height: 100px;
+  text-align: center;
+
+}
+
+/* LEFT MENU */
+
+.left_menu{
+  flex-basis: 30%;
+}
+
+.left_menu ul li{
+  height: 100%;
+  flex-basis: calc(100% / 3);
+  text-align: center;
+  text-transform: uppercase;
+
+
+}
+
+.left_menu .logo img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* RIGHT MENU */
+
+
+.right_menu{
+  flex-basis: 50%;
+}
+.right_menu ul li{
+  width: 100px;
+}
+
+.language{
+  display: flex;
+}
+
+/* Dropdown */
+.dropdowm{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+
+
+}
+
+.dropdowm li{
+  padding: 5px;
+  width: 100%;
+  line-height: initial;
+}
