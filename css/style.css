@@ -138,6 +138,28 @@ a{
   font-weight: 700;
 }
 
+.right_menu .with_dropdown .dropdown .list_left ul li,
+.right_menu .with_dropdown .dropdown .list_right ul li{
+  text-align: left;
+  padding: 10px 0;
+  width: 250px;
+}
+
+/* .right_menu .with_dropdown .dropdown .list_left ul li */
+
+.products_list{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  height: auto;
+  justify-content: space-between;
+}
+/*
+.products_list .list_left{
+
+
+} */
+
 
 
 .active{
