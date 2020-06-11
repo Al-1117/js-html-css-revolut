@@ -15,7 +15,7 @@ $(document).ready(
     // Disattivazione dropdown al click
     $('.with_dropdown').click(
       function(){
-        $(this).children('.dropdown').addClass('hidden');
+        $(this).children('.dropdown').toggleClass('hidden');
       }
     )
     // Frecce vicino alla lingua
